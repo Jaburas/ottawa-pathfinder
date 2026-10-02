@@ -1,5 +1,5 @@
 import { graph, nodes, haversineDistance } from "./graph";
-import type { GraphNode, Edge } from "./graph";
+import type { GraphNode } from "./graph";
 export async function fetchOttawaRoads() {
     const response = await fetch(`${import.meta.env.BASE_URL}ottawa-roads.json`);
 
