@@ -1,7 +1,7 @@
 import { graph, nodes, haversineDistance } from "./graph";
 import type { GraphNode, Edge } from "./graph";
 export async function fetchOttawaRoads() {
-    const response = await fetch("/ottawa-roads.json");
+    const response = await fetch(`${import.meta.env.BASE_URL}ottawa-roads.json`);
 
     if (!response.ok) {
         throw new Error(`Failed to load local road data (${response.status})`);
